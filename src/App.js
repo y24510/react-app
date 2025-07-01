@@ -112,14 +112,14 @@ function App() {
 <Route path="/add" element={<AddUser />} />
 <Route path="/delete" element={<DeleteUser />} />
 <Route path="/find" element={<FindUser />} />
-<Route path="/Todo" element={<TodoUser />} />
+<Route path="/Todo" element={<TodoUser user={user} />} />
 </>
 ) : (
 <>
 <Route path="/add" element={<p>ログインしてください </p>} />
 <Route path="/delete" element={<p>ログインしてください </p>} />
 <Route path="/find" element={<p>ログインしてください </p>} />
-<Route path="/TOdo" element={<p>ログインしてください </p>} />
+<Route path="/Todo" element={<p>ログインしてください </p>} />
 </>
 )}
       </Routes>
